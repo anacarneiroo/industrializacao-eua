@@ -9,10 +9,12 @@
 }
 
 body{
-    background-color: lightblue;
-    height: 100vh;
+    background-color: rgb(55, 55, 55);
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 main{
@@ -23,23 +25,61 @@ main{
 }
 
 section{
-    background-color: rgb(255, 255, 255);
-    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.907);
+    max-width: 450px;
     margin: 30px;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0px 0px 3px rgb(0, 204, 255);
-    
+    border: 3px solid rgb(255, 145, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: rgba(255, 145, 0, 0.619);
+    border-radius: 10px;
+    text-align: center;
+}
+
+li:hover{
+    background-color: rgb(0, 166, 255);
+    transition: 2s;
+}
+
+li:active{
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 p,h2,h3{
     margin: 10px;
 }
 
-h2{
+h2,h1{
     text-align: center;
 }
 
 .correct{
     font-weight: bold;
+}
+
+.font{
+    font-size: 15px;
+    text-align: end;
+}
+
+img{
+    max-width: 350px;
+    align-self: center;
+    margin: 20px 0px;
 }
